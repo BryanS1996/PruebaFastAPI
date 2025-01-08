@@ -34,7 +34,7 @@ database.sqlite: Base de datos SQLite utilizada en el proyecto.
 
 requeriments.txt: Lista de dependencias del proyecto.
 
-##Requisitos
+## Requisitos
 
 Antes de comenzar, asegúrate de tener instalado lo siguiente:
 
@@ -44,14 +44,14 @@ Pip (gestor de paquetes de Python).
 
 Virtualenv (opcional pero recomendado).
 
-##Instalación
+## Instalación
 
 Clona el repositorio:
 
 git clone https://github.com/tu_usuario/tallerfastapi.git
 cd tallerfastapi
 
-##Crea y activa un entorno virtual (opcional):
+## Crea y activa un entorno virtual (opcional):
 
 python -m venv venv
 # En Windows
@@ -59,21 +59,21 @@ python -m venv venv
 # En Linux/Mac
 source venv/bin/activate
 
-##Instala las dependencias:
+## Instala las dependencias:
 
 pip install -r requeriments.txt
 
-##Inicia el servidor:
+## Inicia el servidor:
 
 python -m uvicorn app.endpoints:app --reload
 
-##Accede a la API:
+## Accede a la API:
 
 Documentación interactiva (Swagger UI): http://127.0.0.1:8000/docs
 
 Documentación alternativa (ReDoc): http://127.0.0.1:8000/redoc
 
-##Funcionalidades
+## Funcionalidades
 
 CRUD de frutas: Manejo básico de datos de frutas (crear, leer, actualizar, eliminar).
 
@@ -81,11 +81,11 @@ Integración con OpenAI: Procesamiento de preguntas usando un esquema de ejemplo
 
 Base de datos SQLite: Persistencia de datos con SQLAlchemy.
 
-##Configuración
+## Configuración
 
 El archivo app/config/config.py contiene la configuración básica del proyecto. Si necesitas ajustar algo, asegúrate de modificar ese archivo según tus necesidades.
 
-#Contribuciones
+# Contribuciones
 
 ¡Las contribuciones son bienvenidas! Si encuentras algún problema o deseas mejorar algo, no dudes en abrir un issue o enviar un pull request.
 
