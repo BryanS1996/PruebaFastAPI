@@ -1,0 +1,24 @@
+pipeline {
+    agent any
+
+    stages {
+        stage('Build') {
+            steps {
+                echo 'Etapa BUILD no disponible'
+            }
+        }
+        stage('Tests') {
+            steps {
+                echo 'Ejecutando pruebas...'
+                sh 'pytest tests/' // Asegúrate de tener pruebas configuradas
+            }
+        }
+        stage('Deploy') {
+            steps {
+                echo 'Desplegando aplicación...'
+                sh 'docker-compose down -v'
+                sh 'docker-compose up -d --build'
+            }
+        }
+    }
+}

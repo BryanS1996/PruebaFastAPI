@@ -1,6 +1,6 @@
 import openai
 import uvicorn
-from config.config import Config
+from app.config.config import Config
 from config.database import Base, Session, engine
 from fastapi import FastAPI, status
 from fastapi.encoders import jsonable_encoder
