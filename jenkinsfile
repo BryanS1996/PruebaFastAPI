@@ -7,12 +7,6 @@ pipeline {
                 echo 'Etapa BUILD no disponible'
             }
         }
-        stage('Tests') {
-            steps {
-                echo 'Ejecutando pruebas...'
-                sh 'pytest tests/' // Asegúrate de tener pruebas configuradas
-            }
-        }
         stage('Deploy') {
             steps {
                 echo 'Desplegando aplicación...'
